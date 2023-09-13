@@ -27,10 +27,6 @@ public:
 private slots:
     void on_pushButton_start_clicked();
 
-    void on_pushButton_stop_clicked();
-
-    void on_pushButton_pause_clicked();
-
     void timerTicked();
 
     void on_pushButton_boom_clicked();
@@ -39,9 +35,7 @@ private slots:
 
     void timerDelay();
 
-    void on_pushButton_start_delay_clicked();
-
-    void reverse_timerDelay();
+    void on_pushButton_start_delay_clicked();    
 
     void on_pushButton_restart_clicked();
 
@@ -52,8 +46,7 @@ private:
 
     QTimer *timer;
     QTimer *timerBoom;
-    QTimer *delaytimer;
-    QTimer *reverse_delaytimer;
+    QTimer *delaytimer;    
     QTimer *real_time;
 
     int delayed_counter;
